@@ -211,7 +211,7 @@
 }
 
 .shop-background-blur {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100%;
   background-color: transparent;
@@ -400,6 +400,7 @@ footer {
   padding-top: 100px;
 }
 footer .footer-content {
+  animation: marginBottomLowPixel 1s;
   display: flex;
   flex-direction: row;
   padding-bottom: 100px;
@@ -1205,6 +1206,16 @@ footer .footer-bottom .footer-bottom-span-logos .footer-logo-group i:hover {
     margin-top: 100px;
   }
   100% {
+    margin-bottom: 0px;
+  }
+}
+@keyframes marginBottomLowPixel {
+  0% {
+    opacity: 0.1;
+    margin-top: 30px;
+  }
+  100% {
+    opacity: 1;
     margin-bottom: 0px;
   }
 }

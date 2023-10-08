@@ -29,6 +29,11 @@ shopList.addEventListener("click", () => {
 blurShopList.addEventListener("click", () => {
   shopListDropdown.classList.toggle("df");
   blurShopList.classList.toggle("dn");
+  if (shopListIcon.style.color != "white") {
+    shopListIcon.style.color = "white";
+  } else {
+    shopListIcon.style.color = "#fd9d3e";
+  }
 });
 
 //Burger
