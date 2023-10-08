@@ -1,0 +1,281 @@
+.header {
+  z-index: 2;
+  transition: 0.5s all;
+  --header-height-padding: 15px;
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: transparent;
+  width: 100%;
+  padding: var(--header-height-padding) 0px;
+  white-space: nowrap;
+}
+.header .burger-content ul {
+  color: white;
+  display: none;
+}
+.header .burger-content ul li:hover {
+  color: #121619;
+}
+.header .container {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .logo-div a {
+  display: block;
+}
+.header .container .navbar-components {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.header .container .navbar-components .nav-burger {
+  font-size: 30px;
+  display: none;
+}
+.header .container .navbar-components .navigation-buttons ul {
+  display: flex;
+}
+.header .container .navbar-components .navigation-buttons ul li {
+  margin: 0px 25px;
+  font-weight: 100;
+  font-size: 14px;
+  color: white;
+}
+.header .container .navbar-components .navigation-buttons ul li:hover {
+  color: #fd9d3e;
+  cursor: pointer;
+  transition: 0.35s all;
+}
+.header .container .navbar-components .nav-contact {
+  cursor: pointer;
+  padding: 0px 10px;
+}
+.header .container .navbar-components .nav-contact i {
+  color: #fd9d3e;
+}
+.header .container .navbar-components .nav-contact span {
+  padding: 0px 5px;
+  color: white;
+  font-size: 14px;
+}
+.header .container .navbar-components .nav-shop-price {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+.header .container .navbar-components .nav-shop-price .nav-shop-based {
+  cursor: pointer;
+}
+.header .container .navbar-components .nav-shop-price i {
+  color: #fd9d3e;
+}
+.header .container .navbar-components .nav-shop-price span {
+  font-size: 14px;
+  padding: 0px 5px;
+  color: white;
+}
+.header .container .navbar-components .nav-shop-price .nav-shop-dropdown {
+  position: absolute;
+  animation: opacity 0.5s;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-top: #fd9d3e 4px solid;
+  width: 275px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(100% + var(--header-height-padding));
+  height: 380px;
+}
+.header .container .navbar-components .nav-shop-price .nav-shop-dropdown .shop-dropdown-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header .container .navbar-components .nav-shop-price .nav-shop-dropdown .shop-dropdown-bottom .shop-dropdown-text {
+  margin-bottom: 17px;
+  display: flex;
+  padding: 0px 15px;
+  justify-content: space-between;
+}
+.header .container .navbar-components .nav-shop-price .nav-shop-dropdown .shop-dropdown-bottom .shop-dropdown-text span {
+  color: black;
+}
+.header .container .navbar-components .nav-shop-price .nav-shop-dropdown .shop-dropdown-bottom .shop-dropdown-buttons {
+  display: flex;
+  padding: 0px 20px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.header .container .navbar-components .nav-shop-price .nav-shop-dropdown .shop-dropdown-bottom .shop-dropdown-buttons button {
+  cursor: pointer;
+  background-color: #fd9d3e;
+  border: none;
+  border-radius: 25px;
+  padding: 15px;
+  color: white;
+  border: 1px solid transparent;
+}
+.header .container .navbar-components .nav-shop-price .nav-shop-dropdown .shop-dropdown-bottom .shop-dropdown-buttons button:hover {
+  background-color: white;
+  border: 1px #fd9d3e solid;
+  color: #fd9d3e;
+}
+.header .container .navbar-components .nav-shop-price .nav-shop-dropdown .shop-dropdown-pizza .dropdown-input {
+  width: 35px;
+  height: 25px;
+  padding-left: 10px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.header .container .navbar-components .nav-shop-price .nav-shop-dropdown .shop-dropdown-pizza .shop-dropdown-pizza-div {
+  display: flex;
+  align-items: center;
+  padding: 20px 14px;
+  border-bottom: 1px solid rgb(195, 192, 192);
+}
+.header .container .navbar-components .nav-shop-price .nav-shop-dropdown .shop-dropdown-pizza .shop-dropdown-pizza-div .dropdown-pizza-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-left: 10px;
+  line-height: 1.7;
+}
+.header .container .navbar-components .nav-shop-price .nav-shop-dropdown .shop-dropdown-pizza .shop-dropdown-pizza-div .dropdown-pizza-text span:nth-child(1) {
+  font-size: 13px;
+  color: black;
+}
+.header .container .navbar-components .nav-shop-price .nav-shop-dropdown .shop-dropdown-pizza .shop-dropdown-pizza-div .dropdown-pizza-text span:nth-child(2) {
+  color: gray;
+}
+.header .container .navbar-components .nav-shop-price .nav-shop-dropdown .shop-dropdown-pizza img {
+  width: 90px;
+  height: 90px;
+}
+.header .container .navbar-components .nav-order-online {
+  padding: 0px 10px;
+}
+.header .container .navbar-components .nav-order-online button {
+  cursor: pointer;
+  padding: 15px 10px;
+  border-radius: 25px;
+  color: white;
+  border: none;
+  background-color: #91b842;
+  transition: 0.5s all;
+}
+.header .container .navbar-components .nav-order-online button:hover {
+  background-color: #b77533;
+}
+
+.header-color {
+  background-color: #121619;
+}
+
+.shop-background-blur {
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  background-color: transparent;
+  z-index: 1;
+}
+
+/*#region HeaderResponsive*/
+@media only screen and (max-width: 1680px) {
+  .header .container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .header .container {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .header .container {
+    width: 90%;
+  }
+  .header .container .navbar-components .navigation-buttons ul li {
+    margin: 0px 10px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .header .burger-content {
+    animation: opacity 0.7s;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fd9d3e;
+    top: 100%;
+  }
+  .header .burger-content ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 200px;
+    flex-direction: column;
+  }
+  .header .burger-content ul li {
+    display: flex;
+    padding: 30px 0px;
+  }
+  .header .container .navbar-components .nav-burger {
+    display: inline;
+  }
+  .header .container .navbar-components .navigation-buttons ul {
+    display: none;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .header .container .logo-div a img {
+    width: 125px;
+  }
+  .header .container .navbar-components .nav-order-online button {
+    padding: 12px 7px;
+  }
+  .header .container .navbar-components .nav-contact span {
+    display: none;
+  }
+  .header .container .navbar-components .nav-shop-price .nav-shop-based span {
+    display: none;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .header .container {
+    width: 95%;
+  }
+  .header .container .navbar-components .nav-order-online button {
+    padding: 9px 7px;
+    font-size: 12px;
+  }
+  .header .container .logo-div a img {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .header .container .nav-contact i {
+    font-size: 12px;
+  }
+  .header .container .nav-shop-price i {
+    font-size: 12px;
+  }
+  .header .container .navbar-components .nav-order-online button {
+    padding: 9px 7px;
+    font-size: 12px;
+  }
+  .header .container .logo-div a img {
+    width: 60px;
+  }
+}
+@media only screen and (max-width: 285px) {
+  .header .container .navbar-components .nav-order-online button {
+    padding: 9px 4px;
+  }
+}
+/*#endregion *//*# sourceMappingURL=header.css.map */
