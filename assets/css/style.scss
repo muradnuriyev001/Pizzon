@@ -2,6 +2,11 @@
 @import "./main-scss/main.scss";
 @import "./footer-scss/footer.scss";
 
+@font-face {
+  font-family: Pacifico;
+  src: url(../fonts/Pacifico/Pacifico-Regular.ttf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -84,3 +89,16 @@ $colorBlack: #121619;
 }
 
 /*#endregion */
+
+.fourth-main {
+  height: 1400px;
+  background-color: $colorBlack;
+  .fourth-main-header {
+  }
+}
+
+.fifth-main {
+  
+}
+
+

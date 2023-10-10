@@ -156,18 +156,72 @@
 }
 
 .third-main {
-  background-color: gray;
-  height: 800px;
+  height: 980px;
   width: 100%;
-  position: relative;
-  z-index: -1;
 }
-.third-main .third-main-bottom-img {
-  position: absolute;
-  bottom: 0;
+.third-main .third-main-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 170px;
 }
-.third-main .third-main-bottom-img img {
-  width: 100%;
+.third-main .third-main-header p {
+  color: #fd9d3e;
+  font-size: 30px;
+  font-family: Pacifico;
+}
+.third-main .third-main-header h1 {
+  color: #121619;
+  font-size: 50px;
+  font-family: 900;
+}
+.third-main .third-main-pizzas {
+  animation: marginBottomLowPixel 2s;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+  padding: 25px 300px;
+}
+.third-main .third-main-pizzas .third-main-pizza {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.third-main .third-main-pizzas .third-main-pizza img {
+  transition: 0.8s all;
+  border-radius: 50%;
+}
+.third-main .third-main-pizzas .third-main-pizza img:hover {
+  scale: 1.1;
+}
+.third-main .third-main-pizzas .third-main-pizza p {
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #121619;
+}
+.third-main .third-main-button {
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  animation: marginBottomLowPixel 3s;
+  display: none;
+}
+.third-main .third-main-button button {
+  padding: 25px 40px;
+  border-radius: 50px;
+  border: 1px #fd9d3e solid;
+  background-color: #fd9d3e;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.5s all;
+}
+.third-main .third-main-button button:hover {
+  background-color: white;
+  color: #fd9d3e;
 }
 
 /*#region Main-Banner-Responsive*/
@@ -580,4 +634,122 @@
     font-size: 11px;
   }
 }
-/*#endregion*//*# sourceMappingURL=main.css.map */
+/*#endregion*/
+/*#region Main-Third-Responsive*/
+@media only screen and (max-width: 1800px) {
+  .third-main .third-main-pizzas {
+    padding: 25px 250px;
+  }
+}
+@media only screen and (max-width: 1720px) {
+  .third-main .third-main-pizzas {
+    padding: 25px 210px;
+  }
+}
+@media only screen and (max-width: 1650px) {
+  .third-main .third-main-pizzas {
+    padding: 25px 160px;
+  }
+}
+@media only screen and (max-width: 1540px) {
+  .third-main .third-main-pizzas {
+    padding: 25px 120px;
+  }
+}
+@media only screen and (max-width: 1480px) {
+  .third-main .third-main-pizzas {
+    padding: 25px 100px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .third-main .third-main-pizzas {
+    padding: 25px 80px;
+  }
+}
+@media only screen and (max-width: 1330px) {
+  .third-main .third-main-pizzas {
+    padding: 25px 40px;
+  }
+}
+@media only screen and (max-width: 1260px) {
+  .third-main .third-main-pizzas {
+    padding: 25px 20px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .third-main .third-main-pizzas {
+    padding: 25px 50px;
+  }
+  .third-main .third-main-pizzas .third-main-pizza img {
+    height: 280px;
+    width: 280px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .third-main .third-main-pizzas {
+    padding: 25px 5px;
+  }
+  .third-main .third-main-pizzas .third-main-pizza img {
+    height: 280px;
+    width: 280px;
+  }
+}
+@media only screen and (max-width: 870px) {
+  .third-main .third-main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 40px;
+  }
+  .third-main .third-main-header p {
+    font-size: 25px;
+  }
+  .third-main .third-main-header h1 {
+    font-size: 35px;
+  }
+  .third-main .third-main-pizzas {
+    flex-direction: column;
+    padding: 25px 5px;
+  }
+  .third-main .third-main-pizzas .third-main-pizza {
+    padding-top: 20px;
+  }
+  .third-main .third-main-pizzas .third-main-pizza img {
+    height: 160px;
+    width: 160px;
+  }
+  .third-main .third-main-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .third-main .third-main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 40px;
+  }
+  .third-main .third-main-header p {
+    font-size: 25px;
+  }
+  .third-main .third-main-header h1 {
+    font-size: 35px;
+  }
+  .third-main .third-main-pizzas {
+    flex-direction: column;
+    padding: 25px 5px;
+  }
+  .third-main .third-main-pizzas .third-main-pizza {
+    padding-top: 20px;
+  }
+  .third-main .third-main-pizzas .third-main-pizza img {
+    height: 150px;
+    width: 150px;
+  }
+}
+/*#endregion *//*# sourceMappingURL=main.css.map */
