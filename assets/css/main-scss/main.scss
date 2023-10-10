@@ -239,6 +239,118 @@ $colorBlack: #121619;
   }
 }
 
+.fifth-main {
+  height: 600px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .fifth-main-top-img {
+    position: absolute;
+    bottom: 99%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .fifth-main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 250px;
+    width: 100%;
+    .fifth-main-left-part {
+      width: 500px;
+      p {
+        font-family: Pacifico;
+        font-size: 32px;
+        color: $colorOrange;
+      }
+      h1 {
+        font-size: 45px;
+        color: $colorBlack;
+        white-space: nowrap;
+        margin-top: 5px;
+      }
+      .fifth-main-left-part-span {
+        width: 340px;
+        margin-top: 25px;
+        span {
+          font-size: 11.5px;
+        }
+      }
+      .fifth-main-left-part-number {
+        background-color: $colorBlack;
+        width: 350px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px;
+        flex-direction: row;
+        border: 10px $colorOrange solid;
+        margin-top: 25px;
+        transition: 1s all;
+        cursor: pointer;
+        &:hover {
+          background-color: white;
+          p {
+            color: $colorBlack;
+          }
+          i {
+            color: $colorBlack;
+          }
+        }
+        p {
+          color: white;
+          font-size: 32px;
+        }
+        i {
+          color: white;
+          font-size: 25px;
+        }
+      }
+    }
+
+    .fifth-main-right-part {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      form {
+        display: flex;
+        flex-direction: column;
+        input {
+          margin-top: 25px;
+          border: 1px solid gray;
+          padding: 17px;
+          width: 550px;
+          &:focus {
+            border: 1px solid $colorOrange;
+          }
+        }
+      }
+      .fifth-main-button {
+        margin-top: 20px;
+        button {
+          padding: 20px 30px;
+          background-color: $colorBlack;
+          color: white;
+          border-radius: 50px;
+          border: 1px $colorBlack solid;
+          font-weight: 700;
+          cursor: pointer;
+          &:hover {
+            color: $colorBlack;
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+}
 
 //MAIN
 
@@ -969,8 +1081,300 @@ $colorBlack: #121619;
         }
       }
     }
+  }
+}
 
+/*#endregion */
 
+/*#region Main-Third-Responsive*/
+@media only screen and (max-width: 1570px) {
+  .fifth-main {
+    height: 600px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .fifth-main-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 180px;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1430px) {
+  .fifth-main {
+    .fifth-main-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 130px;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .fifth-main {
+    .fifth-main-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 100px;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  .fifth-main {
+    .fifth-main-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 70px;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .fifth-main {
+    .fifth-main-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 15px;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .fifth-main {
+    .fifth-main-content {
+      display: flex;
+      align-items: center;
+
+      justify-content: space-between;
+      padding: 0px 10px;
+      width: 100%;
+      .fifth-main-left-part {
+        width: 500px;
+        p {
+          font-family: Pacifico;
+          font-size: 32px;
+          color: $colorOrange;
+        }
+        h1 {
+          font-size: 45px;
+          color: $colorBlack;
+          margin-top: 5px;
+        }
+        .fifth-main-left-part-span {
+          width: 340px;
+          margin-top: 25px;
+          span {
+            font-size: 11.5px;
+          }
+        }
+        .fifth-main-left-part-number {
+          background-color: $colorBlack;
+          width: 270px;
+          height: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0px 20px;
+          flex-direction: row;
+          border: 10px $colorOrange solid;
+          margin-top: 25px;
+          transition: 1s all;
+          cursor: pointer;
+          &:hover {
+            background-color: white;
+            p {
+              color: $colorBlack;
+            }
+            i {
+              color: $colorBlack;
+            }
+          }
+          p {
+            color: white;
+            font-size: 22px;
+          }
+          i {
+            color: white;
+            font-size: 20px;
+          }
+        }
+      }
+
+      .fifth-main-right-part {
+        form {
+          input {
+            width: 450px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .fifth-main {
+    .fifth-main-content {
+      .fifth-main-right-part {
+        form {
+          input {
+            width: 400px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .fifth-main {
+    height: 1000px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .fifth-main-content {
+      .fifth-main-left-part {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .fifth-main-left-part-span {
+          span {
+            text-align: center;
+          }
+        }
+      }
+      .fifth-main-right-part {
+        margin-top: 50px;
+        form {
+          input {
+            width: 600px;
+          }
+        }
+      }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .fifth-main {
+    .fifth-main-content {
+      .fifth-main-right-part {
+        form {
+          input {
+            width: 500px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .fifth-main {
+    .fifth-main-content {
+      .fifth-main-left-part {
+        width: 100%;
+      }
+      .fifth-main-right-part {
+        form {
+          input {
+            width: 400px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .fifth-main {
+    .fifth-main-content {
+      .fifth-main-left-part {
+        p {
+          font-family: Pacifico;
+          font-size: 24px;
+          color: $colorOrange;
+        }
+        h1 {
+          font-size: 35px;
+          color: $colorBlack;
+          white-space: nowrap;
+          margin-top: 5px;
+        }
+        .fifth-main-left-part-span {
+          width: 300px;
+          margin-top: 25px;
+          span {
+            font-size: 11.5px;
+          }
+        }
+      }
+      .fifth-main-right-part {
+        form {
+          input {
+            width: 350px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .fifth-main {
+    .fifth-main-content {
+      .fifth-main-left-part {
+        width: 200px;
+        p {
+          font-family: Pacifico;
+          font-size: 22px;
+          color: $colorOrange;
+        }
+        h1 {
+          font-size: 32px;
+          color: $colorBlack;
+          white-space: nowrap;
+          margin-top: 5px;
+        }
+        .fifth-main-left-part-span {
+          width: 270px;
+          margin-top: 25px;
+          span {
+            font-size: 11px;
+          }
+        }
+      }
+      .fifth-main-right-part {
+        form {
+          input {
+            width: 280px;
+          }
+        }
+      }
+    }
   }
 }
 
