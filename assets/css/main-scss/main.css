@@ -225,7 +225,7 @@
 }
 
 .fifth-main {
-  height: 600px;
+  height: 500px;
   background-color: white;
   position: relative;
   display: flex;
@@ -240,13 +240,16 @@
   width: 100%;
 }
 .fifth-main .fifth-main-content {
-  display: flex;
+  display: none;
+  overflow-x: hidden;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 250px;
+  padding: 0px 320px;
+  padding-bottom: 100px;
   width: 100%;
 }
 .fifth-main .fifth-main-content .fifth-main-left-part {
+  animation: leftAnimation 1.8s;
   width: 500px;
 }
 .fifth-main .fifth-main-content .fifth-main-left-part p {
@@ -299,6 +302,7 @@
   font-size: 25px;
 }
 .fifth-main .fifth-main-content .fifth-main-right-part {
+  animation: rightAnimation 1.8s;
   display: flex;
   flex-direction: column;
   align-items: center;

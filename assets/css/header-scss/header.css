@@ -10,6 +10,9 @@
   padding: var(--header-height-padding) 0px;
   white-space: nowrap;
 }
+.header .burger-content {
+  z-index: 3;
+}
 .header .burger-content ul {
   color: white;
   display: none;

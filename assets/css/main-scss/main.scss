@@ -240,13 +240,12 @@ $colorBlack: #121619;
 }
 
 .fifth-main {
-  height: 600px;
+  height: 500px;
   background-color: white;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   .fifth-main-top-img {
     position: absolute;
     bottom: 99%;
@@ -255,14 +254,16 @@ $colorBlack: #121619;
       width: 100%;
     }
   }
-
   .fifth-main-content {
-    display: flex;
+    display: none;
+    overflow-x: hidden;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 250px;
+    padding: 0px 320px;
+    padding-bottom: 100px;
     width: 100%;
     .fifth-main-left-part {
+      animation: leftAnimation 1.8s;
       width: 500px;
       p {
         font-family: Pacifico;
@@ -316,6 +317,7 @@ $colorBlack: #121619;
     }
 
     .fifth-main-right-part {
+      animation: rightAnimation 1.8s;
       display: flex;
       flex-direction: column;
       align-items: center;

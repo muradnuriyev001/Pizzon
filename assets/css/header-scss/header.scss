@@ -17,6 +17,7 @@ $colorBlack: #121619;
   white-space: nowrap;
 
   .burger-content {
+    z-index: 3;
     ul {
       color: white;
       display: none;

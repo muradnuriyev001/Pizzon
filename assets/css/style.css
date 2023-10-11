@@ -10,6 +10,9 @@
   padding: var(--header-height-padding) 0px;
   white-space: nowrap;
 }
+.header .burger-content {
+  z-index: 3;
+}
 .header .burger-content ul {
   color: white;
   display: none;
@@ -506,7 +509,7 @@
 }
 
 .fifth-main {
-  height: 600px;
+  height: 500px;
   background-color: white;
   position: relative;
   display: flex;
@@ -521,13 +524,16 @@
   width: 100%;
 }
 .fifth-main .fifth-main-content {
-  display: flex;
+  display: none;
+  overflow-x: hidden;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 250px;
+  padding: 0px 320px;
+  padding-bottom: 100px;
   width: 100%;
 }
 .fifth-main .fifth-main-content .fifth-main-left-part {
+  animation: leftAnimation 1.8s;
   width: 500px;
 }
 .fifth-main .fifth-main-content .fifth-main-left-part p {
@@ -580,6 +586,7 @@
   font-size: 25px;
 }
 .fifth-main .fifth-main-content .fifth-main-right-part {
+  animation: rightAnimation 1.8s;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1652,6 +1659,10 @@ footer .footer-bottom .footer-bottom-span-logos .footer-logo-group i:hover {
   font-family: Pacifico;
   src: url(../fonts/Pacifico/Pacifico-Regular.ttf);
 }
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1682,6 +1693,31 @@ footer .footer-bottom .footer-bottom-span-logos .footer-logo-group i:hover {
 
 .opacityZero {
   opacity: 0;
+}
+
+.scroll-top {
+  position: fixed;
+  background-color: #fd9d3e;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  border-radius: 50px;
+  cursor: pointer;
+  right: 2%;
+  bottom: 3%;
+}
+.scroll-top:hover {
+  background-color: black;
+}
+.scroll-top:hover i {
+  color: white;
+}
+.scroll-top i {
+  color: white;
+  font-size: 22px;
 }
 
 /*#region Animation*/
@@ -1719,6 +1755,26 @@ footer .footer-bottom .footer-bottom-span-logos .footer-logo-group i:hover {
   100% {
     opacity: 1;
     margin-bottom: 0px;
+  }
+}
+@keyframes leftAnimation {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes rightAnimation {
+  0% {
+    transform: translateX(50%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
   }
 }
 /*#endregion */
