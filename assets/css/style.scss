@@ -23,6 +23,12 @@ html {
   user-select: none;
 }
 
+a:-webkit-any-link {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 $colorOrange: #fd9d3e;
 $colorBlack: #121619;
 
@@ -59,9 +65,9 @@ $colorBlack: #121619;
   cursor: pointer;
   right: 2%;
   bottom: 3%;
-  &:hover{
+  &:hover {
     background-color: black;
-    i{
+    i {
       color: white;
     }
   }
@@ -70,7 +76,6 @@ $colorBlack: #121619;
     font-size: 22px;
   }
 }
-
 
 //Animations
 /*#region Animation*/
@@ -119,32 +124,29 @@ $colorBlack: #121619;
 }
 
 @keyframes leftAnimation {
-  0%{
+  0% {
     transform: translateX(-50%);
     opacity: 0.5;
   }
 
-  100%{
+  100% {
     transform: translateX(0%);
     opacity: 1;
   }
 }
 
-
 @keyframes rightAnimation {
-  0%{
+  0% {
     transform: translateX(50%);
     opacity: 0.5;
   }
 
-  100%{
+  100% {
     transform: translateX(0%);
     opacity: 1;
   }
 }
 /*#endregion */
-
-
 
 .fourth-main {
   height: 1400px;
@@ -152,6 +154,3 @@ $colorBlack: #121619;
   .fourth-main-header {
   }
 }
-
-
-

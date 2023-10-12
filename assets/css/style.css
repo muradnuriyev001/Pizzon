@@ -1675,6 +1675,12 @@ html {
        user-select: none;
 }
 
+a:-webkit-any-link {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .dn {
   display: none;
 }

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/blog-page-css/blog.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/img/PIZZA-IMAGES-FOR-DROPDOWN/2.png" />
+    <title>Blog | Pizzon</title>
+  </head>
+  <body>
+    <!-- Header-Start -->
+    <header id="header" class="header">
+      <div class="container">
+        <div class="logo-div">
+          <a href="index.html"
+            ><img src="assets/img/header-logo.png" alt=""
+          /></a>
+        </div>
+
+        <div class="navbar-components">
+          <div class="navigation-buttons">
+            <ul>
+              <li><a href="./index.html">HOME</a></li>
+              <li>MENU</li>
+              <li><a href="./blog-page.html">BLOG</a></li>
+              <li><a href="./index.html">RESERVATION</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-contact">
+            <i class="fa-solid fa-phone"></i>
+            <span>+12 345 678</span>
+          </div>
+
+          <div class="nav-shop-price">
+            <div id="shopList" class="nav-shop-based">
+              <i id="shopListIcon" class="fa-solid fa-bag-shopping"></i>
+              <span>0 items - $0.00</span>
+            </div>
+            <div id="shopListDropdown" class="nav-shop-dropdown dn">
+              <div class="shop-dropdown-pizza">
+                <div class="shop-dropdown-pizza-div">
+                  <img
+                    src="assets/img/PIZZA-IMAGES-FOR-DROPDOWN/1.png"
+                    alt=""
+                  />
+                  <div class="dropdown-pizza-text">
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+                      "
+                    >
+                      <span>Margherita Pizza</span>
+                      <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <span>$14.99</span>
+                    <div class="qty-input">
+                      <span style="color: gray">Qty: </span>
+                      <input
+                        class="dropdown-input"
+                        min="1"
+                        max="10"
+                        type="text"
+                        value="1"
+                      />
+                    </div>
+                  </div>
+                  <!-- <i class="fa-solid fa-circle-xmark"></i> -->
+                </div>
+
+                <div class="shop-dropdown-pizza-div">
+                  <img
+                    src="assets/img/PIZZA-IMAGES-FOR-DROPDOWN/2.png"
+                    alt=""
+                  />
+                  <div class="dropdown-pizza-text">
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+                      "
+                    >
+                      <span>Turkish Pizza</span>
+                      <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+
+                    <span>$14.99</span>
+                    <div class="qty-input">
+                      <span style="color: gray">Qty: </span>
+                      <input
+                        class="dropdown-input"
+                        min="1"
+                        max="10"
+                        type="text"
+                        value="1"
+                      />
+                    </div>
+                  </div>
+                  <!-- <i class="fa-solid fa-circle-xmark"></i> -->
+                </div>
+              </div>
+
+              <div class="shop-dropdown-bottom">
+                <div class="shop-dropdown-text">
+                  <span>Cart Subtotal</span>
+                  <span>$29.98</span>
+                </div>
+
+                <div class="shop-dropdown-buttons">
+                  <button>CART</button>
+                  <button>CHECKOUT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-order-online">
+            <button class="nav-order-online-btn">ORDER ONLINE</button>
+          </div>
+
+          <div id="nav-burger" class="nav-burger">
+            <i class="fa-solid fa-bars" style="color: #ededed"></i>
+          </div>
+        </div>
+      </div>
+
+      <div id="burger-content" class="burger-content dn">
+        <ul>
+          <li>HOME</li>
+          <li>MENU</li>
+          <li>BLOG</li>
+          <li>RESERVATION</li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Scroll-Top -->
+    <div id="scroll-top" class="scroll-top">
+      <i class="fa-solid fa-angle-up"></i>
+    </div>
+
+    <!-- Dropdown Close On Blur -->
+    <div id="shop-bg-blur" class="shop-background-blur dn"></div>
+
+    <section class="header-section">
+      <div class="header-section-text">
+        <h1>BLOG</h1>
+      </div>
+    </section>
+
+    <section class="main-section">
+        <div class="main-section-left-column">
+            <div class="left-column-input">
+                <input type="text" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            
+        </div>
+
+        <div class="main-section-right-column">
+
+        </div>
+    </section>
+
+    <!-- Footer-Start -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left-text">
+          <img src="assets/img/header-logo.png" alt="" />
+          <span
+            >20 Carrochan Rd, Balloch, Alexandria G83 8EG, UK 69QJ+2F
+            Alexandria, United Kingdom</span
+          >
+          <span>PHONE - +91 123 456 789 0, +91 123 456 789 0</span>
+          <span>EMAIL - info@gmail.com</span>
+        </div>
+
+        <div class="footer-center-text">
+          <p>OPENING HOURS</p>
+          <span class="span-wrap"
+            >Mon - Tues :
+            <span style="color: #fd9d3e">6.00 am - 10.00 pm</span></span
+          >
+          <span class="span-wrap"
+            >Wednes - Thurs :
+            <span style="color: #fd9d3e">6.00 am - 10.00 pm</span></span
+          >
+          <span>Launch :<span style="color: #fd9d3e"> Everyday </span> </span>
+          <span>Sunday : <span style="color: #fd9d3e">Closed</span></span>
+        </div>
+
+        <div class="footer-right-text">
+          <p>USEFUL LINKS</p>
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Order Tracking</li>
+            <li>About</li>
+            <li>Contact Us</li>
+            <li>Wishlist</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="hr"></div>
+        <div class="footer-bottom-span-logos">
+          <span>© Pizzon all Rights Reserved. Designed by MuradNuriyev</span>
+          <div class="footer-logo-group">
+            <i class="fa-brands fa-square-facebook fa-shake"></i>
+            <i class="fa-brands fa-square-x-twitter fa-shake"></i>
+            <i class="fa-brands fa-square-instagram fa-shake"></i>
+            <i class="fa-brands fa-square-whatsapp fa-shake"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer-End -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/header.js"></script>
+  </body>
+</html>

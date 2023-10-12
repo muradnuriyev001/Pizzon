@@ -1,0 +1,34 @@
+.header-section {
+  background-image: url(../../img/Blog-page/blog-1.jpg);
+  background-position-x: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.header-section::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #121619;
+  opacity: 0.8;
+}
+.header-section .header-section-text {
+  z-index: 2;
+}
+.header-section .header-section-text h1 {
+  font-size: 45px;
+  color: white;
+}
+
+.main-section {
+  height: 2000px;
+}
+.main-section .main-section-left-column .left-column-input input {
+  width: 250px;
+  height: 40px;
+}/*# sourceMappingURL=blog.css.map */
