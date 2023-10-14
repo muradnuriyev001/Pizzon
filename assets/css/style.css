@@ -1835,19 +1835,31 @@ a:-webkit-any-link {
   cursor: pointer;
 }
 .fourth-main .menu-box {
-  margin-top: 50px;
-  background-color: #fd9d3e;
+  margin-top: 80px;
   width: 80%;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 .fourth-main .menu-box-element {
+  margin: 10px 30px;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   width: 20%;
+}
+.fourth-main .menu-box-element p {
+  padding-top: 25px;
+  color: white;
+}
+.fourth-main .menu-box-element-span1 {
+  color: #737475;
+  padding: 15px 0px;
+  font-size: 14px;
+}
+.fourth-main .menu-box-element-span2 {
+  color: #fd9d3e;
+  padding: 12px 0px;
 }
 .fourth-main .menu-box-element img {
   width: 200px;

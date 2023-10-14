@@ -202,19 +202,31 @@ $colorBlack: #121619;
   }
 
   .menu-box {
-    margin-top: 50px;
-    background-color: #fd9d3e;
+    margin-top: 80px;
     width: 80%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap:wrap;
-    &-element{
+    flex-wrap: wrap;
+    &-element {
+      margin: 10px 30px;
       display: flex;
       flex-direction: column;
       text-align: center;
       align-items: center;
       width: 20%;
-      img{
+      p {
+        padding-top: 25px;
+        color: white;
+      }
+      &-span1 {
+        color: #737475;
+        padding: 15px 0px;
+        font-size: 14px;
+      }
+      &-span2 {
+        color: $colorOrange;
+        padding: 12px 0px;
+      }
+      img {
         width: 200px;
       }
     }

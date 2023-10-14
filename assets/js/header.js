@@ -1,4 +1,4 @@
-//Chaning color or header on scorlling down
+//Changing color or header on scorlling down
 
 const header = document.getElementById("header");
 window.addEventListener("scroll", () => {
@@ -43,4 +43,16 @@ const burgerContent = document.getElementById("burger-content");
 
 burger.addEventListener("click", () => {
   burgerContent.classList.toggle("df");
+});
+
+//Closing Burger onClick </a>
+
+const burgerLiMenuClose = document.getElementById("burger-li-menu-close");
+const burgerLiMenuClose2 = document.getElementById("burger-li-menu-close2");
+burgerLiMenuClose.addEventListener("click", () => {
+  burgerContent.classList.remove("df");
+});
+
+burgerLiMenuClose2.addEventListener("click", () => {
+  burgerContent.classList.remove("df");
 });
