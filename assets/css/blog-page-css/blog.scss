@@ -16,27 +16,25 @@
     background: #121619;
     opacity: 0.8;
   }
-  .header-section-text{
+  .header-section-text {
     z-index: 2;
-    h1{
-        font-size: 45px;
-        color: white;
-
+    h1 {
+      font-size: 45px;
+      color: white;
     }
   }
 }
 
-.main-section{
-    height: 2000px;
-    .main-section-left-column{
-        .left-column-input{
-            input{
-                width: 250px;
-                height: 40px;
-                
-            }
-            i{
-            }
-        }
+.main-section {
+  height: 2000px;
+  .main-section-left-column {
+    .left-column-input {
+      input {
+        width: 250px;
+        height: 40px;
+      }
+      i {
+      }
     }
+  }
 }
