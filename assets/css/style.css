@@ -1836,17 +1836,20 @@ a:-webkit-any-link {
 }
 .fourth-main .menu-box {
   margin-top: 80px;
+  background-color: RED;
   width: 80%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  grid-gap: 20px 30px;
 }
 .fourth-main .menu-box-element {
-  margin: 10px 30px;
+  margin: 20px 0px;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  width: 20%;
+  width: 100%;
 }
 .fourth-main .menu-box-element p {
   padding-top: 25px;
@@ -1862,5 +1865,5 @@ a:-webkit-any-link {
   padding: 12px 0px;
 }
 .fourth-main .menu-box-element img {
-  width: 200px;
+  width: 60%;
 }/*# sourceMappingURL=style.css.map */
