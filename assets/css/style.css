@@ -1836,7 +1836,6 @@ a:-webkit-any-link {
 }
 .fourth-main .menu-box {
   margin-top: 80px;
-  background-color: RED;
   width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1850,6 +1849,9 @@ a:-webkit-any-link {
   text-align: center;
   align-items: center;
   width: 100%;
+}
+.fourth-main .menu-box-element:hover img {
+  scale: 1.2;
 }
 .fourth-main .menu-box-element p {
   padding-top: 25px;
@@ -1865,5 +1867,7 @@ a:-webkit-any-link {
   padding: 12px 0px;
 }
 .fourth-main .menu-box-element img {
-  width: 60%;
+  width: 200px;
+  height: 200px;
+  transition: 1s all;
 }/*# sourceMappingURL=style.css.map */

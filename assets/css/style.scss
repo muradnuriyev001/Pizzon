@@ -203,15 +203,20 @@ $colorBlack: #121619;
 
   .menu-box {
     margin-top: 80px;
-    background-color: RED;
+
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     grid-gap: 20px 30px;
     &-element {
-      margin: 20px 0px;
+      &:hover{
+        img{
+          scale: 1.2;
 
+        }
+      }
+      margin: 20px 0px;
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -231,7 +236,9 @@ $colorBlack: #121619;
         padding: 12px 0px;
       }
       img {
-        width: 60%;
+        width: 200px;
+        height: 200px;
+        transition: 1s all;
       }
     }
   }
