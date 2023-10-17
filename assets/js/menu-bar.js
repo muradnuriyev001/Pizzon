@@ -22,7 +22,7 @@ const menuBox = document.getElementById("menu-box");
 
 pizza1 = `<div class="menu-box-element">
 <img src="assets/img/Menu-Images/pizza/pizza-1.png" alt="" />
-<p>MARGHERITA PIZZA</p>
+<p>Chicken Pizza</p>
 <span class="menu-box-element-span1"
   >Lorem Ipsum is simply dummy text of the printing and
   typesetting industry.</span
@@ -32,7 +32,7 @@ pizza1 = `<div class="menu-box-element">
 
 pizza2 = `<div class="menu-box-element">
 <img src="assets/img/Menu-Images/pizza/pizza-2.png" alt="" />
-<p>MARGHERITA PIZZA</p>
+<p>Chicken Pizza</p>
 <span class="menu-box-element-span1"
   >Lorem Ipsum is simply dummy text of the printing and
   typesetting industry.</span
@@ -42,7 +42,7 @@ pizza2 = `<div class="menu-box-element">
 
 pizza3 = `<div class="menu-box-element">
 <img src="assets/img/Menu-Images/pizza/pizza-3.png" alt="" />
-<p>MARGHERITA PIZZA</p>
+<p>Chicken Pizza</p>
 <span class="menu-box-element-span1"
   >Lorem Ipsum is simply dummy text of the printing and
   typesetting industry.</span
@@ -52,7 +52,7 @@ pizza3 = `<div class="menu-box-element">
 
 pizza4 = `<div class="menu-box-element">
 <img src="assets/img/Menu-Images/pizza/pizza-4.png" alt="" />
-<p>MARGHERITA PIZZA</p>
+<p>Chicken Pizza</p>
 <span class="menu-box-element-span1"
   >Lorem Ipsum is simply dummy text of the printing and
   typesetting industry.</span
@@ -62,7 +62,7 @@ pizza4 = `<div class="menu-box-element">
 
 pizza5 = `<div class="menu-box-element">
 <img src="assets/img/Menu-Images/pizza/pizza-5.png" alt="" />
-<p>MARGHERITA PIZZA</p>
+<p>Chicken Pizza</p>
 <span class="menu-box-element-span1"
   >Lorem Ipsum is simply dummy text of the printing and
   typesetting industry.</span
