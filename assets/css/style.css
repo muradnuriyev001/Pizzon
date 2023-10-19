@@ -1,5 +1,5 @@
 .header {
-  z-index: 2;
+  z-index: 3;
   transition: 0.5s all;
   --header-height-padding: 15px;
   position: fixed;

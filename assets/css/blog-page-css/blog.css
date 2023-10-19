@@ -26,9 +26,73 @@
 }
 
 .main-section {
-  height: 2000px;
+  padding: 100px 330px;
+}
+.main-section .main-section-left-column h2 {
+  font-size: 22px;
+}
+.main-section .main-section-left-column .left-column-input {
+  position: relative;
+  padding: 30px 0px;
 }
 .main-section .main-section-left-column .left-column-input input {
+  padding-left: 10px;
   width: 250px;
   height: 40px;
+  border: rgb(210, 210, 210) 0.5px solid;
+}
+.main-section .main-section-left-column .left-column-input i {
+  position: absolute;
+  top: 50%;
+  left: 220px;
+  transform: translateY(-50%);
+  color: rgb(170, 170, 170);
+}
+.main-section .main-section-left-column ul {
+  padding: 20px 0px;
+}
+.main-section .main-section-left-column ul li {
+  padding: 20px 0px;
+  color: gray;
+  font-size: 13px;
+  width: 20%;
+  cursor: pointer;
+  border-top: 1px solid rgb(210, 210, 210);
+  transition: 0.5s all;
+}
+.main-section .main-section-left-column ul li:last-child {
+  border-bottom: 1px solid rgb(210, 210, 210);
+}
+.main-section .main-section-left-column ul li:hover {
+  color: #fd9d3e;
+}
+.main-section .main-section-left-column .recent-tab {
+  padding: 20px 0px;
+}
+.main-section .main-section-left-column .recent-tab .recent-tab-content {
+  padding: 15px 0px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+}
+.main-section .main-section-left-column .recent-tab .recent-tab-content img {
+  transition: 0.5s;
+}
+.main-section .main-section-left-column .recent-tab .recent-tab-content img:hover {
+  scale: 1.15;
+}
+.main-section .main-section-left-column .recent-tab .recent-tab-content .recent-tab-content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-section .main-section-left-column .recent-tab .recent-tab-content .recent-tab-content-text p, .main-section .main-section-left-column .recent-tab .recent-tab-content .recent-tab-content-text span {
+  padding: 5px 10px;
+  color: #fd9d3e;
+  font-size: 14px;
+  width: 200px;
+}
+.main-section .main-section-left-column .recent-tab .recent-tab-content .recent-tab-content-text span {
+  color: #121619;
+  font-weight: 700;
 }/*# sourceMappingURL=blog.css.map */
