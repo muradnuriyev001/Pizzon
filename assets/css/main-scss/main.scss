@@ -294,13 +294,14 @@ $colorBlack: #121619;
 
   .menu-box {
     margin-top: 80px;
-
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     grid-gap: 20px 30px;
+    
     &-element {
+      animation: scalingAnimation 1.2s;
       &:hover {
         img {
           scale: 1.2;

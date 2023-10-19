@@ -5,9 +5,12 @@ let type = "ALL";
 
 for (let i = 0; i < menuListArray.length; i++) {
   menuListArray[i].addEventListener("click", () => {
+    const oldType = type;
     type = menuListArray[i].innerText;
-    menuBoxFilteredContentHTML();
-    onChangeType(menuListArray[i]);
+    if (oldType !== type) {
+      menuBoxFilteredContentHTML();
+      onChangeType(menuListArray[i]);
+    }
   });
 }
 const onChangeType = (seletctedType) => {

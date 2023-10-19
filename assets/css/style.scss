@@ -146,7 +146,13 @@ $colorBlack: #121619;
     opacity: 1;
   }
 }
+
+@keyframes scalingAnimation {
+  0% {
+    scale: .5;
+  }
+  100% {
+    scale: 1;
+  }
+}
 /*#endregion */
-
-
-

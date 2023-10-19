@@ -283,6 +283,7 @@
   grid-gap: 20px 30px;
 }
 .fourth-main .menu-box-element {
+  animation: scalingAnimation 1.2s;
   margin: 20px 0px;
   display: flex;
   flex-direction: column;

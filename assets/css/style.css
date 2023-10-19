@@ -567,6 +567,7 @@
   grid-gap: 20px 30px;
 }
 .fourth-main .menu-box-element {
+  animation: scalingAnimation 1.2s;
   margin: 20px 0px;
   display: flex;
   flex-direction: column;
@@ -2253,6 +2254,14 @@ a:-webkit-any-link {
   100% {
     transform: translateX(0%);
     opacity: 1;
+  }
+}
+@keyframes scalingAnimation {
+  0% {
+    scale: 0.5;
+  }
+  100% {
+    scale: 1;
   }
 }
 /*#endregion *//*# sourceMappingURL=style.css.map */
