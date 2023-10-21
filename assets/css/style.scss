@@ -65,6 +65,7 @@ $colorBlack: #121619;
   cursor: pointer;
   right: 2%;
   bottom: 3%;
+  animation: opacityScaling .8s;
   &:hover {
     background-color: black;
     i {

@@ -2187,6 +2187,7 @@ a:-webkit-any-link {
   cursor: pointer;
   right: 2%;
   bottom: 3%;
+  animation: opacityScaling 0.8s;
 }
 .scroll-top:hover {
   background-color: black;

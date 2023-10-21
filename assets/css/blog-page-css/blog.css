@@ -26,6 +26,7 @@
 }
 
 .main-section {
+  display: flex;
   padding: 100px 330px;
 }
 .main-section .main-section-left-column h2 {
@@ -86,7 +87,8 @@
   flex-direction: column;
   justify-content: center;
 }
-.main-section .main-section-left-column .recent-tab .recent-tab-content .recent-tab-content-text p, .main-section .main-section-left-column .recent-tab .recent-tab-content .recent-tab-content-text span {
+.main-section .main-section-left-column .recent-tab .recent-tab-content .recent-tab-content-text p,
+.main-section .main-section-left-column .recent-tab .recent-tab-content .recent-tab-content-text span {
   padding: 5px 10px;
   color: #fd9d3e;
   font-size: 14px;
@@ -95,4 +97,89 @@
 .main-section .main-section-left-column .recent-tab .recent-tab-content .recent-tab-content-text span {
   color: #121619;
   font-weight: 700;
+}
+.main-section .main-section-left-column .tag-content {
+  padding: 30px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 210px;
+}
+.main-section .main-section-left-column .tag-content span {
+  text-align: center;
+  border: 1px solid rgb(207, 207, 207);
+  margin: 0px 5px;
+  color: gray;
+  font-size: 15px;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.5s all;
+  margin-top: 10px;
+}
+.main-section .main-section-left-column .tag-content span:hover {
+  background-color: #fd9d3e;
+  color: white;
+}
+.main-section .main-section-right-column {
+  padding: 0px 50px;
+  display: flex;
+  flex-direction: column;
+}
+.main-section .main-section-right-column .navigation-bottom-buttons button {
+  padding: 12px;
+  background-color: #121619;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.main-section .main-section-right-column .navigation-bottom-buttons button:hover {
+  scale: 1.1;
+}
+.main-section .main-section-right-column .navigation-bottom-buttons .bottom-btn {
+  margin-left: 7px;
+  background-color: white;
+  color: rgb(128, 128, 128);
+  border: 1px solid rgb(160, 160, 160);
+}
+.main-section .main-section-right-column .navigation-bottom-buttons .bottom-btn:hover {
+  border: 1px solid #121619;
+}
+.main-section .main-section-right-column .right-column-blog-box {
+  padding: 30px 0px;
+}
+.main-section .main-section-right-column .right-column-blog-box .writer-text {
+  display: flex;
+}
+.main-section .main-section-right-column .right-column-blog-box .writer-text span {
+  font-size: 13px;
+  margin: 15px 0px;
+}
+.main-section .main-section-right-column .right-column-blog-box .writer-text span:nth-child(2) {
+  margin-left: 10px;
+}
+.main-section .main-section-right-column .right-column-blog-box .writer-comment h1 {
+  font-size: 25px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.main-section .main-section-right-column .right-column-blog-box .writer-comment h1:hover {
+  color: #fd9d3e;
+}
+.main-section .main-section-right-column .right-column-blog-box .writer-comment .writer-comment-spans {
+  display: flex;
+  flex-direction: column;
+}
+.main-section .main-section-right-column .right-column-blog-box .writer-comment .writer-comment-spans span {
+  color: rgb(160, 160, 160);
+  font-size: 14px;
+  margin-top: 10px;
+}
+.main-section .main-section-right-column .right-column-blog-box .writer-comment .writer-comment-spans span:nth-child(2) {
+  color: #fd9d3e;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.4s;
+}
+.main-section .main-section-right-column .right-column-blog-box .writer-comment .writer-comment-spans span:nth-child(2):hover {
+  color: black;
 }/*# sourceMappingURL=blog.css.map */
