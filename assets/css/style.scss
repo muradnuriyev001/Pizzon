@@ -7,6 +7,16 @@
   src: url(../fonts/Pacifico/Pacifico-Regular.ttf);
 }
 
+::-webkit-scrollbar{
+  background-color: $colorBlack;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: $colorOrange;
+}
+
+
+
 html {
   scroll-behavior: smooth;
 }

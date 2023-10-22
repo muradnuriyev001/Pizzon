@@ -2132,6 +2132,14 @@ footer .footer-bottom .footer-bottom-span-logos .footer-logo-group i:hover {
   font-family: Pacifico;
   src: url(../fonts/Pacifico/Pacifico-Regular.ttf);
 }
+::-webkit-scrollbar {
+  background-color: #121619;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fd9d3e;
+}
+
 html {
   scroll-behavior: smooth;
 }
