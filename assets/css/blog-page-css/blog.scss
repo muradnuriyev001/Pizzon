@@ -153,6 +153,12 @@ $colorBlack: #121619;
     display: flex;
     flex-direction: column;
     .right-column-blog-box {
+      img {
+        transition: 0.6s all;
+        &:hover {
+          scale: 1.08;
+        }
+      }
       padding: 30px 0px;
       .writer-text {
         display: flex;
@@ -300,6 +306,24 @@ $colorBlack: #121619;
   .main-section {
     flex-direction: column-reverse;
     .main-section-left-column {
+      align-items: center;
+      text-align: center;
+      .recent-tab {
+        .recent-tab-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            width: 100px;
+            padding-bottom: 20px;
+          }
+        }
+      }
+      ul {
+        li {
+          width: 310px;
+        }
+      }
     }
 
     .main-section-right-column {
@@ -325,7 +349,6 @@ $colorBlack: #121619;
   .main-section {
     flex-direction: column-reverse;
     .main-section-left-column {
-
     }
 
     .main-section-right-column {
@@ -337,7 +360,6 @@ $colorBlack: #121619;
         .writer-text {
           span {
             font-size: 11px;
-
           }
         }
         .writer-comment {
@@ -357,7 +379,6 @@ $colorBlack: #121619;
   .main-section {
     flex-direction: column-reverse;
     .main-section-left-column {
-
     }
 
     .main-section-right-column {
@@ -372,7 +393,7 @@ $colorBlack: #121619;
           }
           .writer-comment-spans {
             width: 450px;
-            span{
+            span {
               font-size: 12px;
             }
           }
@@ -386,7 +407,6 @@ $colorBlack: #121619;
   .main-section {
     flex-direction: column-reverse;
     .main-section-left-column {
-
     }
 
     .main-section-right-column {
@@ -401,7 +421,7 @@ $colorBlack: #121619;
           }
           .writer-comment-spans {
             width: 320px;
-            span{
+            span {
               font-size: 10px;
             }
           }
