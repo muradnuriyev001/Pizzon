@@ -208,6 +208,9 @@ footer .footer-bottom .footer-bottom-span-logos .footer-logo-group i:hover {
   footer {
     height: 1100px;
   }
+  footer .footer-bottom .footer-content .footer-center-text .span-wrap {
+    white-space: wrap;
+  }
   footer .footer-bottom .footer-bottom-span-logos {
     flex-direction: column;
     text-align: center;
@@ -224,9 +227,6 @@ footer .footer-bottom .footer-bottom-span-logos .footer-logo-group i:hover {
 @media only screen and (max-width: 570px) {
   footer {
     height: 1150px;
-  }
-  footer .footer-content .footer-center-text .span-wrap {
-    white-space: wrap;
   }
   footer .footer-bottom .footer-bottom-span-logos {
     flex-direction: column;

@@ -256,6 +256,13 @@ footer {
   footer {
     height: 1100px;
     .footer-bottom {
+      .footer-content {
+        .footer-center-text {
+          .span-wrap {
+            white-space: wrap;
+          }
+        }
+      }
       .footer-bottom-span-logos {
         flex-direction: column;
         text-align: center;
@@ -275,13 +282,7 @@ footer {
 @media only screen and (max-width: 570px) {
   footer {
     height: 1150px;
-    .footer-content {
-      .footer-center-text {
-        .span-wrap {
-          white-space: wrap;
-        }
-      }
-    }
+
     .footer-bottom {
       .footer-bottom-span-logos {
         flex-direction: column;
