@@ -2208,6 +2208,42 @@ a:-webkit-any-link {
   font-size: 22px;
 }
 
+.loader-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #121619;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader-container .loader {
+  z-index: 6;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.loader-container .loader:before, .loader-container .loader:after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
+}
+.loader-container .loader:after {
+  box-shadow: 0 2px 0 #fd9d3e inset;
+  animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /*#region Animation*/
 @keyframes opacity {
   0% {

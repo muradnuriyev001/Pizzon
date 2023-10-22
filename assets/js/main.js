@@ -15,6 +15,13 @@ scrollTop.addEventListener("click", () => {
   document.documentElement.scrollTop = 0;
 });
 
+//Loader-Remove
+
+const loader = document.getElementById("loader")
+setTimeout(() => {
+  loader.remove()
+}, 3000);
+
 //Second-Main-Visible
 
 const secondMainAnimation = document.getElementById("second-main-animation");
