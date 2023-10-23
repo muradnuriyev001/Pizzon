@@ -20,7 +20,7 @@ scrollTop.addEventListener("click", () => {
 const loader = document.getElementById("loader")
 setTimeout(() => {
   loader.remove()
-}, 3000);
+}, 1600);
 
 //Second-Main-Visible
 
